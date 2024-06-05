@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(120deg, #e66465, #9198e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+/* Centering the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* game board table */
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 3px #000000;
+  background-color: beige;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 3px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+
